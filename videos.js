@@ -2,10 +2,12 @@ const portfolioVideos = {
   selectedWorks: [
     { title: "GO DEMARCUS: The Documentary", url: "https://youtu.be/khi7PasZvmc" },
     { title: "Seneca Street Liquor - TV Spots", url: "https://youtu.be/QRvhe_rce_Q" },
+    { title: "Valentines Day｜Weekend In Wichita", url: "https://youtu.be/CGD17nVY4hY" },
     { title: "Halo 3 Mural", url: "https://youtu.be/AuUamql0U2w" },
     { title: "Tommy Newport - Vanilla & Light (Official Video)", url: "https://youtu.be/Y-FtK_A8R4Q" },
     { title: "GRANDMA - Blue Atlanta (Official Video)", url: "https://youtu.be/SsmCQMu1Y7o" },
     { title: "JOD", url: "https://youtu.be/FYXxgF7p_e8" },
+    { title: "Clown Musuem｜Weekend In Wichita", url: "https://youtu.be/JhGYf2Knh18" },
     { title: "The Madwest Theory: A Danoiz Documentary (Official Trailer)", url: "https://youtu.be/yv---mcYhws" },
     { title: "PERFECT DYLAN", url: "https://youtu.be/c0uAJzmdEY4" },
     { title: "The REAL reason you need a bidet", url: "https://youtu.be/nOtbeqJWnPI" },
