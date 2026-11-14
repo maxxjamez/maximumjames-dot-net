@@ -1,6 +1,6 @@
 # Publish maximumjames.net with GitHub Pages
 
-Unzip the package on your Mac and open `index.html` to check the layout and navigation. The homepage links to **Selected Works** and **Client Work**. Each page shows a two-column video grid on desktop and a single column on smaller screens. Add your videos in `videos.js`. Test YouTube playback from the hosted site so the player gets the web address it needs.
+To preview a local copy on your Mac, open the site folder in Terminal and run `python3 -m http.server 8000`. Open [localhost:8000](http://localhost:8000) to check the layout and navigation. The homepage links to **Selected Works** and **Client Work**. Each page shows a two-column video grid on desktop and a single column on smaller screens. Add your videos in `videos.js`. Test YouTube playback from the hosted site so the player gets the web address it needs.
 
 ## 1. Add your videos
 
@@ -27,8 +27,8 @@ If you want the browser’s player, use a stable, public HTTPS URL to an H.264 M
 
 ## 2. Publish the files on GitHub Pages
 
-1. Open [maxxjamez/maximumjames.net](https://github.com/maxxjamez/maximumjames.net). If you are starting over, [create a public repository](https://github.com/new) named `maximumjames.net` under `maxxjamez` and turn on **Add README** to initialize the `main` branch. Public repositories can use GitHub Pages on GitHub Free.
-2. On the **Code** tab, select **Add file → Upload files**. From inside the unzipped folder, upload `index.html`, `selected-works.html`, `client-work.html`, `styles.css`, `videos.js`, `players.js`, and `headshot.jpg`. Click **Commit changes**. All seven files go at the top level of the repository.
+1. Open [maxxjamez/maximumjames-dot-net](https://github.com/maxxjamez/maximumjames-dot-net). If you are starting over, [create a public repository](https://github.com/new) under `maxxjamez` and turn on **Add README** to initialize the `main` branch. Public repositories can use GitHub Pages on GitHub Free.
+2. On the **Code** tab, select **Add file → Upload files**. Upload the site files and folders to the top level of the repository and click **Commit changes**. Each page folder (`selected-works/`, `client-work/`, and `contact/`) contains an `index.html` file. The three matching `.html` files at the top level forward previously shared links.
 3. Open **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**, select **main** and **/(root)**, then click **Save**. Check the **Actions** tab for the Pages deployment. Once it finishes, use the site link in **Pages** to visit both gallery pages and play a video in a private browser window.
 
 [GitHub Pages publishing instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
