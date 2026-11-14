@@ -18,5 +18,15 @@ const portfolioVideos = {
     { title: "GREEN SCREEN LAMBO", url: "https://youtu.be/5IlpFz1WC3s" },
     { title: "Like, Comment and Die! (Official Trailer 4K)", url: "https://youtu.be/XYF7Wy1rXmQ" },
   ],
-  clientWork: [],
+  clientWork: [
+    { title: "Peyton Manning, 2026 Special Olympics Airlift Honorary Chair｜Textron Aviation", url: "https://youtu.be/KOzhNT8msBc" },
+    { title: "Ready for Meddy's TV Spot｜Meddys", url: "https://youtu.be/Wj0RIVSyR00" },
+    { title: "Tallgrass Producer Campaign｜Tallgrass Film Association", url: "https://youtu.be/FojQ1XqQA_8" },
+    { title: "Plane Healthy｜Textron Aviation", url: "https://youtu.be/tTQdwjoxCEE" },
+    { title: "Fruhauf Testimonial ｜ Zenzap", url: "https://youtu.be/DqbilFCFeaQ" },
+    { title: "Artwork Installation  ｜ Textron Aviation", url: "https://youtu.be/OHJM448dB-4" },
+    { title: "Cyber Security ｜ Friends University", url: "https://youtu.be/oQbgIFS32Xg" },
+    { title: "How To Popcorn｜Tallgrass Film Festival", url: "https://youtube.com/shorts/bxVd0Tm6BPY" },
+    { title: "Meet Rachel 2026 Special Olympics  ｜ Textron Aviation", url: "https://youtu.be/-_Mfmq5fuUQ" },
+  ],
 };
