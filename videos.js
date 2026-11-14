@@ -1,10 +1,22 @@
-// Add one entry per video. The order here is the order on each page.
-// Paste a normal YouTube video link or a direct .mp4 URL next to its title.
 const portfolioVideos = {
   selectedWorks: [
-    // { title: "Your project title", url: "PASTE_YOUTUBE_LINK_HERE" },
+    { title: "GO DEMARCUS: The Documentary", url: "https://youtu.be/khi7PasZvmc" },
+    { title: "Seneca Street Liquor - TV Spots", url: "https://youtu.be/QRvhe_rce_Q" },
+    { title: "Halo 3 Mural", url: "https://youtu.be/AuUamql0U2w" },
+    { title: "Tommy Newport - Vanilla & Light (Official Video)", url: "https://youtu.be/Y-FtK_A8R4Q" },
+    { title: "GRANDMA - Blue Atlanta (Official Video)", url: "https://youtu.be/SsmCQMu1Y7o" },
+    { title: "JOD", url: "https://youtu.be/FYXxgF7p_e8" },
+    { title: "The Madwest Theory: A Danoiz Documentary (Official Trailer)", url: "https://youtu.be/yv---mcYhws" },
+    { title: "PERFECT DYLAN", url: "https://youtu.be/c0uAJzmdEY4" },
+    { title: "The REAL reason you need a bidet", url: "https://youtu.be/nOtbeqJWnPI" },
+    { title: "Heart, Heart & Asi Kemera - Wish On a Star (Official Video)", url: "https://youtu.be/bqp6i3ajjmA" },
+    { title: "Evann McIntosh - Better feat. Meshell Ndegeocello (Official Music Video)", url: "https://youtu.be/jcajSsRDi4w" },
+    { title: "Blaconator's Pro Skater", url: "https://youtu.be/u3TsMZjBZaQ" },
+    { title: "gun", url: "https://youtu.be/YJg0S67C4uo" },
+    { title: "MAXXJAMEZ & RUNNER BOY - BAIL BONDS (Official Music Video)", url: "https://youtu.be/kKNPMgbhkKE" },
+    { title: "2021: THE VIDEO GAME", url: "https://youtu.be/eiKlprYtNTk" },
+    { title: "GREEN SCREEN LAMBO", url: "https://youtu.be/5IlpFz1WC3s" },
+    { title: "Like, Comment and Die! (Official Trailer 4K)", url: "https://youtu.be/XYF7Wy1rXmQ" },
   ],
-  clientWork: [
-    // { title: "Your client project", url: "PASTE_YOUTUBE_LINK_HERE" },
-  ],
+  clientWork: [],
 };
