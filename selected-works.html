@@ -2,31 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Watch selected works by Maximum James.">
-  <meta name="theme-color" content="#1c1d18">
   <title>Selected Works | Maximum James</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="styles.css">
-  <script src="videos.js" defer></script>
-  <script src="players.js" defer></script>
+  <link rel="canonical" href="https://maximumjames.net/selected-works/">
+  <script>
+    location.replace("./selected-works/" + location.search + location.hash);
+  </script>
+  <noscript><meta http-equiv="refresh" content="0; url=./selected-works/"></noscript>
 </head>
 <body>
-  <main class="gallery">
-    <nav class="gallery-nav" aria-label="Portfolio pages">
-      <a class="home-link" href="index.html"><span aria-hidden="true">←</span> Maximum James</a>
-      <div class="gallery-sections">
-        <a href="selected-works.html" aria-current="page">Selected Works</a>
-        <a href="client-work.html">Client Work</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </nav>
-
-    <h1>Selected Works</h1>
-    <p class="video-empty">Videos coming soon.</p>
-    <ul class="video-grid" data-video-grid="selectedWorks" role="list" hidden></ul>
-  </main>
+  <p><a href="./selected-works/">Go to Selected Works</a></p>
 </body>
 </html>

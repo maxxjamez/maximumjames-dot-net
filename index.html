@@ -6,6 +6,12 @@
   <meta name="description" content="Maximum James, director and filmmaker. Explore selected works, client work, and IMDb credits.">
   <meta name="theme-color" content="#1c1d18">
   <title>Maximum James</title>
+  <link rel="canonical" href="https://maximumjames.net/">
+  <script>
+    if (location.protocol !== "file:" && location.pathname.endsWith("/index.html")) {
+      history.replaceState(null, "", "./" + location.search + location.hash);
+    }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap">
@@ -22,9 +28,9 @@
     <img class="portrait" src="headshot.jpg" width="1536" height="2048" alt="Maximum James smiling in a camouflage jacket">
 
     <nav class="work" aria-label="Portfolio work">
-      <a class="work-link" href="selected-works.html">Selected Works <span class="chevron" aria-hidden="true"></span></a>
-      <a class="work-link" href="client-work.html">Client Work <span class="chevron" aria-hidden="true"></span></a>
-      <a class="work-link" href="contact.html">Contact <span class="chevron" aria-hidden="true"></span></a>
+      <a class="work-link" href="selected-works/">Selected Works <span class="chevron" aria-hidden="true"></span></a>
+      <a class="work-link" href="client-work/">Client Work <span class="chevron" aria-hidden="true"></span></a>
+      <a class="work-link" href="contact/">Contact <span class="chevron" aria-hidden="true"></span></a>
     </nav>
   </main>
 </body>
