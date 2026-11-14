@@ -21,6 +21,7 @@ const portfolioVideos = {
     { title: "Like, Comment and Die! (Official Trailer 4K)", url: "https://youtu.be/XYF7Wy1rXmQ" },
   ],
   clientWork: [
+    { title: "Murph Meets Wichita｜Pando Initiative", url: "https://youtu.be/gYsxPy26mg0" },
     { title: "Peyton Manning, 2026 Special Olympics Airlift Honorary Chair｜Textron Aviation", url: "https://youtu.be/KOzhNT8msBc" },
     { title: "Ready for Meddy's TV Spot｜Meddys", url: "https://youtu.be/Wj0RIVSyR00" },
     { title: "Tallgrass Producer Campaign｜Tallgrass Film Association", url: "https://youtu.be/FojQ1XqQA_8" },
