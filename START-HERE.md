@@ -73,3 +73,11 @@ dig +short www.maximumjames.net CNAME
 [GitHub Pages HTTPS instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https)
 
 For future video updates, edit `videos.js` on GitHub and commit to `main`. GitHub Pages will redeploy the site with the new entries.
+
+## Site sounds and hidden game
+
+`click-sound.js` makes a quiet mechanical mouse click using Web Audio on site clicks and keyboard activations. It is loaded by the home, gallery, and contact pages. YouTube videos begin with a thumbnail play button so the first play click gets the sound too. Browser security prevents the site from adding sounds to controls inside third-party YouTube and game iframes.
+
+On the Contact page, the existing head image opens a hidden, on-site dialog containing **360 Degrees by Stepford**. The game loads only when the head is activated. Close, Escape, or a click outside the dialog dismisses it and removes the player to stop its audio. The subtext reads: “My song Full Circle is featured in the game's shuffled soundtrack.”
+
+The game uses the creator’s official [itch.io playable embed](https://stepford.itch.io/360-degrees), because Newgrounds blocks embedding its player on other domains. Keep the itch.io player attribution and fullscreen controls. The fixed-size game canvas and itch.io footer are scaled together so the complete player fits smaller screens. The dialog markup is in `contact/index.html`; its behavior and layout are in `secret-game.js` and `secret-game.css`.

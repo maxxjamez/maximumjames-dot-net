@@ -25,14 +25,36 @@ function createPlayer({ title, url, poster }) {
 
   const youtubeId = getYouTubeId(source);
   if (youtubeId && /^[A-Za-z0-9_-]{11}$/.test(youtubeId)) {
-    const player = document.createElement("iframe");
-    player.title = title;
-    player.loading = "lazy";
-    player.referrerPolicy = "strict-origin-when-cross-origin";
-    player.allow = "autoplay; encrypted-media; picture-in-picture";
-    player.allowFullscreen = true;
-    player.src = `https://www.youtube-nocookie.com/embed/${youtubeId}?playsinline=1`;
-    return player;
+    // Keep the initial play action on the site so it gets the shared click sound.
+    const launcher = document.createElement("button");
+    launcher.type = "button";
+    launcher.className = "video-launcher";
+    launcher.setAttribute("aria-label", `Play ${title}`);
+
+    const thumbnail = document.createElement("img");
+    thumbnail.src = poster || `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`;
+    thumbnail.alt = "";
+    thumbnail.loading = "lazy";
+    thumbnail.decoding = "async";
+
+    const playIcon = document.createElement("span");
+    playIcon.className = "video-play-icon";
+    playIcon.setAttribute("aria-hidden", "true");
+    launcher.append(thumbnail, playIcon);
+
+    launcher.addEventListener("click", () => {
+      const player = document.createElement("iframe");
+      player.className = "video-player";
+      player.title = title;
+      player.referrerPolicy = "strict-origin-when-cross-origin";
+      player.allow = "autoplay; encrypted-media; picture-in-picture";
+      player.allowFullscreen = true;
+      player.src = `https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&playsinline=1`;
+      launcher.replaceWith(player);
+      player.focus({ preventScroll: true });
+    }, { once: true });
+
+    return launcher;
   }
 
   if (["https:", "http:", "file:"].includes(source.protocol) && /\.mp4$/i.test(source.pathname)) {
@@ -62,7 +84,7 @@ for (const entry of entries) {
   const card = document.createElement("li");
   const title = document.createElement("h2");
   card.className = "video-card";
-  player.className = "video-player";
+  player.classList.add("video-player");
   title.textContent = entry.title;
   card.append(player, title);
   videoGrid.append(card);
